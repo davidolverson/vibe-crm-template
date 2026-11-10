@@ -1,0 +1,31 @@
+{
+  "name": "VIBE",
+  "short_name": "VIBE",
+  "description": "A CRM for real estate brokerages — leads, pipeline, deals.",
+  "start_url": "/dashboard",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0A0A0F",
+  "theme_color": "#D4A017",
+  "icons": [
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "shortcuts": [
+    { "name": "Dashboard", "url": "/dashboard" },
+    { "name": "Pipeline", "url": "/pipeline" },
+    { "name": "Contacts", "url": "/contacts" }
+  ]
+}

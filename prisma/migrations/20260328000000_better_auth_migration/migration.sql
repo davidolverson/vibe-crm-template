@@ -1,0 +1,1 @@
+-- Migration applied manually via Neon MCP on 2026-03-28

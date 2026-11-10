@@ -1,0 +1,48 @@
+# Source control + editor
+.git
+.gitignore
+.gitattributes
+.vscode
+.idea
+
+# Build artifacts and caches that the Docker build re-creates
+node_modules
+.next
+out
+build
+dist
+coverage
+
+# Environment files - never copy secrets into images
+.env
+.env.*
+!.env.example
+
+# Test artifacts
+playwright-report
+test-results
+tests
+
+# Logs and OS junk
+*.log
+.DS_Store
+Thumbs.db
+
+# Docs and dev-only files the runtime doesn't need
+README.md
+DEPLOY.md
+DESIGN.md
+PHASES.md
+PLAN.md
+SETUP.md
+RESUME.md
+CLAUDE.md
+AGENTS.md
+LOOP_PROMPT.md
+IMPROVEMENT_LOG.md
+skills-lock.json
+mobile
+
+# NOTE: content_log.md is NOT dev-only -- src/lib/changelog.ts reads it at
+# build time to statically generate /changelog. Excluding it breaks the
+# Docker build (ENOENT on prerender). Keep it in the image.
